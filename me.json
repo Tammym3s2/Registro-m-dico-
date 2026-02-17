@@ -1,38 +1,40 @@
 {
-"name": "Tammy",
-  "last name": "Barragan Figueroa",
+  "firstName": "Tammy",
+  "lastName": "Barragan Figueroa",
   "address" : "calle 4 av 2 la patrona", 
-  "birthdate": "August 19 2009" ,
-  "hobbies" : {
+  "birthDate": "August 19 2009",
+  "hobbies" : [
     "1": "read a book" ,
     "2": "listen to music" , 
     "3": "wacht tv" 
-  },
-  "friends": {
-    "name": "Ximena" ,
-    "last name": "Perez Rosas" ,
+  ],
+  "friends": [
+    
+    "firstName": "Ximena" ,
+    "lastName": "Perez Rosas" ,
     "address": "Avenida 39B Numero 3341 unidad del zopilote" ,
-    "birthday": "January 08 2009" ,
+    "birthDate": "January 08 2009" ,
     "hobbies": [
       "1: escuchar musica" , 
       "2: bailar" ,
     ],
-    "name": "Alejandra" , 
-    "last name": "Porraz Ramirez" ,
+    "firstName": "Alejandra" , 
+    "lastName": "Porraz Ramirez" ,
     "address": "Colonia Vhermosa calle nardo" ,
-    "birthday": "November 04 2009" ,
+    "birthDate": "November 04 2009" ,
     "hobbies": [
       "1: leer" ,
       "2: bailar" ,
       "3: escuchar musica"
     ],
-    "name": "Annel",
-    "last name": "Ricano Cansino" ,
+    "firstNaame": "Annel",
+    "lastName": "Ricano Cansino" ,
     "address": "calle 31 av 1 y 2 cordoba"
-    "birthday": "March 26 2009", 
+    "birthDate": "March 26 2009", 
     "hobbies": [
       "1: entrenar" , 
       "2: escuchar musica" , 
       "3: pasear" 
     ]
+   
 }
