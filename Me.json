@@ -4,9 +4,9 @@
   "adress": "calle 31, Av. 1 y 2",
   "BirthDate": "26/03/2009",
   "hobbies": {
-    1;"entrenar gymnasia"
-    2;"escuchar musica"
-    3;"pasear" 
+    1:"entrenar gymnasia"
+    2:"escuchar musica"
+    3:"pasear" 
   },
   "Friends":{
       "FirstName": "ximena"
@@ -23,18 +23,18 @@
   "adress": "col. V. vista hermosa, calle nardo",
   "BirthDate": "04/11/2009",
   "hobbies": [
-    1;"leer",
-    2;"bailar",
-    3;"escuchar musica" 
+    1:"leer",
+    2:"bailar",
+    3:"escuchar musica" 
     ],
       "FirstName": "Tammy"
   "LastName": "Barragan ",
   "adress": "col.la patrona calle 4 av.2",
   "BirthDate": "19/08/2009",
   "hobbies": [
-    1;"leer",
-    2;"escuchar musica",
-    3;"ver tv" 
+    1:"leer",
+    2:"escuchar musica",
+    3:"ver tv" 
     ],
     },
       
