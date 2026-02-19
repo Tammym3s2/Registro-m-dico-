@@ -1,7 +1,7 @@
 {
-"name":"ximena",
-"last name":"rosas",
-"adress": "Avenue 39B number 3341 unit El Zopilote",
+"firsName":"ximena",
+"lastName":"rosas",
+"adress": "Avenue 39B number 3341 zipCode El Zopilote",
 "birthDate": "08/01/2009",
 "hobbies":{
 "1":"listen music ",
@@ -11,8 +11,8 @@
 "friends":[
   {
 "firsName":"alejandra",
-"last name":"porras",
-"adres":"col.V.Beautiful.Nardo",
+"lastName":"porras",
+"adres":"county.V.Beautiful.Nardo",
 "birthDate": "04/11/2009",
 "hobbies": [
  "1":"read",
@@ -20,8 +20,8 @@
  "3":"listen music "
 ],
 "firsName":"tammy",
-"last name":"barragan",
-"adres":"Col. La Patrona, Calle 4, Av. 2",
+"lastName":"barragan",
+"adres":"county. La Patrona, street 4, Av. 2",
 "birthDate": "08/19/2009",
 "hobbies": [
  "1":"read",
@@ -30,11 +30,12 @@
 ],
 "firsName":"anne",
 "lastName":"ricaño",
-"adres":"calle 31 av. 1 y 2",
+"adres":" street 31 av. 1 y 2",
 "birthDate": "03/26/2009",
 "hobbies": [
  "1":"train",
  "2":"listen music",
  "3":"sightseeing"
 ]
-  },
+    ]
+  }
