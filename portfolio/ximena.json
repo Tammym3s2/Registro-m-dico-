@@ -1,40 +1,40 @@
 {
 "name":"ximena",
 "last name":"rosas",
-"adress": "Avenida 39B número 3341 unidad el zopilote",
+"adress": "Avenue 39B number 3341 unit El Zopilote",
 "birthDate": "08/01/2009",
 "hobbies":{
-"1":"escuchar musica",
-"2":"bailar",
-"3":"pasear"
+"1":"listen music ",
+"2":"dance",
+"3":"sightseeing"
 },
 "friends":[
   {
 "firsName":"alejandra",
 "last name":"porras",
-"adres":"col.V.Hermosa.Nardo",
+"adres":"col.V.Beautiful.Nardo",
 "birthDate": "04/11/2009",
 "hobbies": [
- "1":"leer",
- "2":"bailar",
- "3":"escuchar musica"
+ "1":"read",
+ "2":"dance",
+ "3":"listen music "
 ],
 "firsName":"tammy",
 "last name":"barragan",
-"adres":"col.la patrona calle 4 av.2",
+"adres":"Col. La Patrona, Calle 4, Av. 2",
 "birthDate": 19/08/2009,
 "hobbies": [
- "1":"leer",
- "2":"escuchar musica",
- "3":"ver tv"
+ "1":"read",
+ "2":"listen music",
+ "3":"watch tv"
 ],
 "firsName":"anne",
 "lastName":"ricaño",
 "adres":"calle 31 av. 1 y 2",
 "birthDate": 26/03/2009
 "hobbies": [
- "1":"entrenar",
- "2":"escuchar musica",
- "3":"pasear"
+ "1":"train",
+ "2":"listen music",
+ "3":"sightseeing"
 ]
   },
