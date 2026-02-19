@@ -1,41 +1,41 @@
 {
   "firstName": "Alejandra",
   "lastName": "Porras",
-  "address" : "col. V. Hermosa calle Nardo", 
-  "birthDate": "04/11/2009",
+  "address" : "Col. V. Hermosa Nardo Street", 
+  "birthDate": "11/04/2009",
   "hobbies" : [
-    "1": "leer" ,
-    "2": "bailar" , 
-    "3": "escuchar musica" 
+    "1": "read horror novels" ,
+    "2": "dance kpop" , 
+    "3": "listen to music" 
   ],
   "friends": [
     
     "firstName": "Ximena" ,
     "lastName": "Perez" ,
-    "address": "Avenida 39B 3341 col. Zopilote" ,
-    "birthDate": "08/01/2009" ,
+    "address": "Av. 39B 3341 col. Zopilote" ,
+    "birthDate": "01/08/2009" ,
     "hobbies": [
-      "1: escuchar musica" , 
-      "2: bailar" ,
-      "3: pasear"
+      "1":"listen to music" , 
+      "2":"dance" ,
+      "3":"sightseeing"
     ],
     "firstName": "Tammy" , 
     "lastName": "Barragan" ,
     "address": "Calle 24" ,
-    "birthDate": "24/09/2009" ,
+    "birthDate": "09/24/2009" ,
     "hobbies": [
-      "1: leer" ,
-      "2: ver la TV" ,
-      "3: escuchar musica"
+      "1":"read" ,
+      "2":"watch TV" ,
+      "3":"listan to music"
     ],
-    "firstNaame": "Annel",
+    "firstName": "Annel",
     "lastName": "Ricaño" ,
-    "address": "calle 31 av 1 y 2"
-    "birthDate": "26/3/2009", 
+    "address": "31 street 1-2 Av"
+    "birthDate": "03/26/2009", 
     "hobbies": [
-      "1: entrenar" , 
-      "2: escuchar musica" , 
-      "3: pasear" 
+      "1":"exercise" , 
+      "2":"listen to music" , 
+      "3":"sigghtseeing" 
     ]
   ]
 }
