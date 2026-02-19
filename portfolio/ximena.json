@@ -22,7 +22,7 @@
 "firsName":"tammy",
 "last name":"barragan",
 "adres":"Col. La Patrona, Calle 4, Av. 2",
-"birthDate": 08/19/2009,
+"birthDate": "08/19/2009",
 "hobbies": [
  "1":"read",
  "2":"listen music",
@@ -31,7 +31,7 @@
 "firsName":"anne",
 "lastName":"ricaño",
 "adres":"calle 31 av. 1 y 2",
-"birthDate": 03/26/2009
+"birthDate": "03/26/2009",
 "hobbies": [
  "1":"train",
  "2":"listen music",
