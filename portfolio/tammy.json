@@ -1,7 +1,7 @@
 {
   "firstName": "Tammy",
   "lastName": "Barragan Figueroa",
-  "address" : "calle 4 av 2 la patrona", 
+  "address" : "street 4 av 2 la patrona", 
   "birthDate": "August 19 2009",
   "hobbies" : [
     "1": "read a book" ,
@@ -12,7 +12,7 @@
     
     "firstName": "Ximena" ,
     "lastName": "Perez Rosas" ,
-    "address": "Avenida 39B Numero 3341 unidad del zopilote" ,
+    "address": "Av 39B Number 3341 county del zopilote" ,
     "birthDate": "January 08 2009" ,
     "hobbies": [
       "1: listen to music" , 
@@ -20,7 +20,7 @@
     ],
     "firstName": "Alejandra" , 
     "lastName": "Porraz Ramirez" ,
-    "address": "Colonia Vhermosa calle nardo" ,
+    "address": "county Vhermosa street nardo" ,
     "birthDate": "November 04 2009" ,
     "hobbies": [
       "1: read a book" ,
@@ -29,7 +29,7 @@
     ],
     "firstName": "Annel",
     "lastName": "Ricano Cansino" ,
-    "address": "calle 31 av 1 y 2 cordoba",
+    "address": "street 31 av 1 y 2 cordoba",
     "birthDate": "March 26 2009", 
     "hobbies": [
       "1: train" , 
