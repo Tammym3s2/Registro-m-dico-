@@ -1,3 +1,4 @@
+```mermaid
 erDiagram
     OWNER ||--o{ PET : owns
     PET ||--o{ VET_VISIT : records
@@ -32,3 +33,4 @@ erDiagram
         string dosage
         string frequency
     }
+```
