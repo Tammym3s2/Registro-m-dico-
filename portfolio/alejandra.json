@@ -1,41 +1,34 @@
 {
   "firstName": "Alejandra",
   "lastName": "Porras",
-  "address" : "Col. V. Hermosa Nardo Street", 
+  "address": "Col. V. Hermosa Nardo Street",
   "birthDate": "11/04/2009",
-  "hobbies" : [
-    "1": "read horror novels" ,
-    "2": "dance kpop" , 
-    "3": "listen to music" 
+  "hobbies": [
+    "read horror novels",
+    "dance kpop",
+    "listen to music"
   ],
   "friends": [
-    
-    "firstName": "Ximena" ,
-    "lastName": "Perez" ,
-    "address": "Av. 39B 3341 col. Zopilote" ,
-    "birthDate": "01/08/2009" ,
-    "hobbies": [
-      "1":"listen to music" , 
-      "2":"dance" ,
-      "3":"sightseeing"
-    ],
-    "firstName": "Tammy" , 
-    "lastName": "Barragan" ,
-    "address": "4 street 2 Av" ,
-    "birthDate": "08/19/2009" ,
-    "hobbies": [
-      "1":"read" ,
-      "2":"watch TV" ,
-      "3":"listan to music"
-    ],
-    "firstName": "Annel",
-    "lastName": "Ricaño" ,
-    "address": "31 street 1-2 Av"
-    "birthDate": "03/26/2009", 
-    "hobbies": [
-      "1":"exercise" , 
-      "2":"listen to music" , 
-      "3":"sigghtseeing" 
-    ]
+    {
+      "firstName": "Ximena",
+      "lastName": "Perez",
+      "address": "Av. 39B 3341 col. Zopilote",
+      "birthDate": "01/08/2009",
+      "hobbies": ["listen to music", "dance", "sightseeing"]
+    },
+    {
+      "firstName": "Tammy",
+      "lastName": "Barragan",
+      "address": "4 street 2 Av",
+      "birthDate": "08/19/2009",
+      "hobbies": ["read", "watch TV", "listen to music"]
+    },
+    {
+      "firstName": "Annel",
+      "lastName": "Ricaño",
+      "address": "31 street 1-2 Av",
+      "birthDate": "03/26/2009",
+      "hobbies": ["exercise", "listen to music", "sightseeing"]
+    }
   ]
 }
