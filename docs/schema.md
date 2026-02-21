@@ -20,15 +20,16 @@ erDiagram
         object specific_traits "EMBEDDED (Polymorphic)"
     }
 
-    VET_VISIT {
+   VET_VISIT {
         string visit_id PK
         string date
         string reason
         string pet_id FK
-        array medications "EMBEDDED ARRAY"
+        array medication_ids FK "ARRAY OF MEDICATION PKs"
     }
 
     MEDICATION {
+        string medication_id PK
         string medication_name
         string dosage
         string frequency
