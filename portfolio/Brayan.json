@@ -1,0 +1,38 @@
+{
+  "personalInformation": {
+    "firstName": "Brayan",
+    "lastName": "Hernandez Jimenez",
+    "address": "calle 31 bis",
+    "age": 18,
+    "dateOfBirth": "2008-02-16",
+    "hobbies": [
+      "Reading",
+      "Playing soccer",
+      "Coding"
+    ],
+    "friends": [
+      "firstName": "karen",
+    "lastName": "Rivera",
+    "address": "El diamante",
+    "age": 17,
+    "dateOfBirth": "2009-02-22",
+    "hobbies": "dessert",[
+    ],
+    "friends": [
+      "firstName": "Irving",
+    "lastName": "Hernandez",
+    "address": "Aguillon",
+    "age": 17,
+    "dateOfBirth": "2009-01-16",
+    "hobbies": "sports",[
+    ],
+    "friends": [
+      "firstName": "Uriel",
+    "lastName": "lopez",
+    "address": "buena vista",
+    "age": 16,
+    "dateOfBirth": "2009-07-20",
+    "hobbies": "gym",[
+    ]
+
+{
