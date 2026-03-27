@@ -71,7 +71,7 @@ Below are the key queries implemented in this deliverable:
 * **Technique:** Use of Regular Expressions (Regex).
 
 ![January Search](./img/buscar%20mes.png)
-![2026 Search](./img/buscaaño.png)
+![2026 Search](./img/buscaraño.png)
 
 ---
 
