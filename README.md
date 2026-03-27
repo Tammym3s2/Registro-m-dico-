@@ -87,7 +87,7 @@ Below are the key queries implemented in this deliverable:
 ### 📊 8. Data Distribution (Species Overview)
 **Objective:** Visualize the variety of patients registered in the clinic using **MongoDB Compass Schema Analysis**. This tool helps the clinic understand at a glance which species are the most common in our database.
 
-**Insights:** * As shown in the generated chart, **Hedgehogs** currently represent **16%** of our total registered patients.
+**Insights:** * As shown in the generated chart, **horse** currently represent **10%** of our total registered patients.
 * This distribution allows the veterinary staff to better plan for specialized medical supplies (e.g., specific food or medicine for exotic pets).
 
 ![Schema Analysis Overview](./img/species.png)
