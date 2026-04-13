@@ -9,7 +9,7 @@
 "pet_id": "PET-990",
 "name": "Luna",
 "species": "cat",
-"age_years": 3,
+"birthdate": 2025-02-25,
 "owner_id": "OWN-7721",
 "specific_traits": {
 "fur_color": "Calico",
