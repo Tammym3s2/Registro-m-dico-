@@ -15,7 +15,7 @@ erDiagram
         string pet_id
         string name
         string species
-        int age_years
+        int birthdate
         string owner_id
         string fur_color
         boolean is_indoor
