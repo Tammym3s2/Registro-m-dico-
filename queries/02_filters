@@ -1,54 +1,27 @@
-# Reporte de Consultas y Filtrado Avanzado - MongoDB
+# Advanced Data Filtering Evidence - MongoDB
 
-## 📂 Descripción de la Evidencia
-Este documento contiene las consultas MQL (MongoDB Query Language) para la gestión de inventarios, ventas y control cronológico, utilizando operadores de comparación y expresiones regulares.
-
----
-
-### 💰 1. Análisis de Ventas de Alto Valor
-**Objetivo:** Identificar transacciones que superan un monto específico para auditoría de ingresos.
-* **Consulta:** `{ total_amount: { $gt: 300 } }`
-* **Operador:** `$gt` (Greater Than) - Filtra documentos donde el monto es estrictamente mayor a 300.
-* **Utilidad:** Permite al departamento contable identificar pedidos grandes o "Ventas VIP".
+This document provides the MQL (MongoDB Query Language) queries and technical explanations for inventory management, sales auditing, and chronological control.
 
 ---
 
-### 💊 2. Control de Stock Crítico (Medicamentos)
-**Objetivo:** Detectar productos con existencias bajas para generar alertas de reabastecimiento.
-* **Consulta:** `{ stock: { $lt: 100 } }`
-* **Operador:** `$lt` (Less Than) - Filtra registros con una cantidad menor a 100 unidades.
-* **Utilidad:** Fundamental en farmacias para evitar el desabastecimiento de medicamentos esenciales.
-
+### 💰 1. High-Value Sales Analysis
+* **Objective:** Identify transactions that exceed a specific amount for revenue auditing.
+* **Query:** `{ total_amount: { $gt: 300 } }`
+* **Operator:** `$gt` (Greater Than) - Filters documents where the amount is strictly greater than 300.
+(./img/premium_low_stock_1.png)
 ---
 
-### 🏷️ 3. Productos Premium con Bajo Inventario
-**Objetivo:** Encontrar productos de alto costo que están por agotarse (Filtro AND implícito).
-* **Consulta:** ```javascript
-    { 
-      price: { $gt: 50 }, 
-      stock: { $lt: 10 } 
-    }
-    ```
-* **Técnica:** Se utiliza una combinación de `$gt` y `$lt`. Al estar separados por una coma, MongoDB aplica un **AND lógico** automáticamente.
-* **Utilidad:** Gestión estratégica; asegura que los productos que generan más margen de ganancia no se queden sin stock.
-
+### 💊 2. Critical Stock Control (Medicines)
+* **Objective:** Detect products with low stock to generate replenishment alerts.
+* **Query:** `{ stock: { $lt: 100 } }`
+* **Operator:** `$lt` (Less Than) - Filters records with a quantity of less than 100 units.
+(./img/premium_low_stock_1.png)
 ---
 
-### 📅 4. Control Cronológico (Año y Mes)
-**Objetivo:** Realizar auditorías de visitas por periodos de tiempo utilizando patrones de texto.
-
-* **Búsqueda por Mes (Enero):** `{ "vet_visit.date": /^1\// }`
-    * *Explicación:* El símbolo `^` indica que la cadena debe comenzar con "1/" (Enero).
-* **Búsqueda por Año (2026):** `{ "vet_visit.date": /2026/ }`
-    * *Explicación:* Busca la coincidencia del año 2026 en cualquier parte del campo de fecha.
-* **Técnica:** Uso de **Expresiones Regulares (Regex)** para filtrado flexible de cadenas de texto.
-
----
-
-## 🛠️ Resumen de Operadores Utilizados
-
-| Operador | Nombre | Función |
-| :--- | :--- | :--- |
-| **`$gt`** | Greater Than | Busca valores mayores al definido. |
-| **`$lt`** | Less Than | Busca valores menores al definido. |
-| **`//`** | Regex | Define un patrón de búsqueda para campos de texto (como fechas en String). |
+### 🏷️ 3. Premium Products with Low Inventory
+* **Objective:** Find high-cost products that are running out of stock.
+* **Query:** ```javascript
+  { 
+    price: { $gt: 50 }, 
+    stock: { $lt: 10 } 
+  }
