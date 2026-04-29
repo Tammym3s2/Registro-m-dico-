@@ -1,0 +1,17 @@
+1. Update Owner Contact Information
+
+Objective: Keep the database updated when a client changes their contact details to ensure effective communication for appointments.
+Code: db.pets.updateOne({ "owner.owner_id": "OWN-7721" }, { $set: { "owner.phone_number": "+52-555-9999" } })
+Field used: owner.owner_id to locate the document and owner.phone_number to overwrite the specific value.
+
+2. Automated Age Incrementation
+
+Objective: Maintain the accuracy of the patients' ages by incrementing the numerical value during their annual check-up.
+Code: db.pets.updateOne({ "pet.name": "Luna" }, { $inc: { "pet.age": 1 } })
+Field used: pet.name as the identifier and pet.age to apply a mathematical increment (+1).
+
+3. Medical History Expansion
+
+Objective: Record new clinical procedures or vaccinations without overwriting previous data, preserving the patient's full medical record.
+Code: db.pets.updateOne({ "pet.name": "Luna" }, { $push: { "pet.medical_history": "Rabia 2026" } })
+Field used: pet.medical_history to append a new string value to the existing array of procedures.
