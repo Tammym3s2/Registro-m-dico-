@@ -1,4 +1,5 @@
-```erDiagram
+```
+    erDiagram
     PET ||--o| OWNER : "belongs_to"
     SALE ||--o| OWNER : "references"
     SALE ||--|{ SALE_ITEMS : "contains"
