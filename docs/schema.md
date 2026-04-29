@@ -1,4 +1,4 @@
-'''
+```
 erDiagram
     PET ||--o| OWNER : "belongs_to"
     SALE ||--o| OWNER : "references"
@@ -46,4 +46,4 @@ erDiagram
         string laboratory
         date date_Exp
     }
-    '''
+    ```
