@@ -1,6 +1,7 @@
 “Mundo Animal” Veterinary Management System
-Week: (March 23-27
-)
+Week: (March 23-27)
+
+** Roll als Query Developer (Tammy Nashely)
 
 Evidenzbericht: Rolle als Query Developer
 Projekt: Veterinärmanagementsystem „Mundo Animal“
