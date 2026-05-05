@@ -1,3 +1,7 @@
+“Mundo Animal” Veterinary Management System
+Week: (March 23-27
+)
+
 Evidenzbericht: Rolle als Query Developer
 Projekt: Veterinärmanagementsystem „Mundo Animal“
 Verantwortlicher: (JSON Architect & Query Developer)
