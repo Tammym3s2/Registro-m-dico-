@@ -1,4 +1,5 @@
-    ```erDiagram
+    ```mermaid
+    erDiagram
     OWNER_PET ||--o{ SALE 
     MEDICATION ||--o{ SALE 
 
