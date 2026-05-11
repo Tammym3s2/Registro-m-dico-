@@ -11,7 +11,7 @@ Below are the key queries implemented in this deliverable:
 * **Code:** `{ "pet.species": "Turtle" }`
 * **Field used:** `pet.species` to filter by taxonomic categories.
 
-![Turtle Query](./img/turtle.png)
+![Turtle Query](/img/turtle.png)
 
 ---
 
