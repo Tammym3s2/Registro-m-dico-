@@ -1,4 +1,4 @@
-erDiagram
+    ```erDiagram
     OWNER_PET ||--o{ SALE 
     MEDICATION ||--o{ SALE 
 
@@ -30,3 +30,4 @@ erDiagram
         string presentation
         int stock
     }
+    ```
