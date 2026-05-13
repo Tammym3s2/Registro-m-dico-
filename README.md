@@ -1,5 +1,30 @@
-# Registro-m-dico-
-El sistema actual de gestión de mascotas enfrenta el desafío de manejar datos altamente heterogéneos. Debido a las diferencias biológicas y de cuidado entre especies. Se requiere una solución que permita almacenar información específica para cada tipo de animal sin comprometer la integridad de los datos.
+# PetHealth Connect: Gestión Veterinaria e Integral
+## Descripción
+**PetHealth Connect** es una plataforma web integral diseñada para la gestión digital de servicios veterinarios, permitiendo a los dueños de mascotas agendar citas médicas y adquirir medicamentos especializados en un solo ecosistema optimizado. Este proyecto resuelve la desorganización de historiales médicos y la dificultad de acceso a suministros de salud animal, eliminando las barreras de comunicación entre la clínica y el usuario. Para el dueño de una mascota, representa la tranquilidad de tener un control total, rápido y centralizado sobre el bienestar de su compañero, asegurando que el cuidado médico y farmacéutico esté a un solo clic de distancia.
+## 🏗️ Rol del Colaborador: Data Modeler
+Como responsable del modelado de datos, el enfoque principal de este repositorio es la arquitectura de la base de datos NoSQL en MongoDB, asegurando la integridad, escalabilidad y eficiencia en las consultas.
+### Características del Modelo de Datos:
+ * **Patrón de Embebido:** Optimización de lecturas mediante la anidación de mascotas dentro de sus respectivos dueños.
+ * **Integridad Financiera:** Desnormalización de precios en la colección de ventas para mantener registros históricos exactos.
+ * **Polimorfismo:** Estructura flexible para soportar diversas especies de mascotas con rasgos específicos.
+## 📁 Estructura de Datos (Semillas)
+El proyecto incluye dos colecciones principales con 100 documentos de prueba para validación:
+ 1. **Owners & Pets:** Registro de dueños y sus mascotas anidadas.
+ 2. **Sales:** Registro de transacciones, citas y medicamentos adquiridos.
+## 🛠️ Tecnologías Utilizadas
+ * **Base de Datos:** MongoDB Atlas (Cloud)
+ * **Formato de Datos:** JSON
+ * **Modelado:** NoSQL / Documental
+## 🚀 Instalación y Uso
+Para probar los datos en tu entorno local o en MongoDB Atlas:
+ 1. Clona este repositorio.
+ 2. Localiza los archivos owners_pets_seed.json y sales_seed.json.
+ 3. Importa los archivos usando MongoDB Compass o la terminal:
+   ```bash
+   mongoimport --uri "tu_cadena_de_conexion" --collection owners --file owners_pets_seed.json --jsonArray
+   
+   ```
+© 2026 PetHealth Connect - Desarrollado bajo estándares de Modelado de Datos NoSQL.
 ## 👥 Team Roles and Responsibilities
 
 | # | Technical Role | Main Responsibility (Weekly Sprints) |
