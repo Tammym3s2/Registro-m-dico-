@@ -147,3 +147,10 @@ Below are the key queries implemented in this deliverable:
 | **VET-QRY-01** | **Query Developer**<br>*(Tammy Nashely)* | • Optimize retrieval times using Indexing.<br>• Refactor Regex filters to enforce case-insensitive matching (`$options: "i"`). | • Execution time stays under 50ms via MongoDB Profiler.<br>• Emergency phone-number lookup algorithm fully verified. | `Regex` / `Indexing` / `Profiler` |  🟢 To Do|
 | **VET-ARC-01** | **Data Modeler & Architect**<br>*(Alejandra Porras)* | • Document the unified English schema foundations.<br>• Implement JSON Schema Validation rules for data types. | • Validation scripts successfully block Spanish keys.<br>• 100% agreement on relational links between collections. | `JSON Schema` / `Validation` | 🟢 To Do |
 | **VET-SED-01** | **Data Seeder**<br>*(Research Role)* | • Configure Mockaroo formulas for conditional logic.<br>• Execute large-scale data ingestion via terminal. | • Generate a clean dataset with 1.5 million valid entities.<br>• Successful import via `mongoimport` CLI tool. | `Mockaroo` / `mongoimport` |  🟢 To Do |
+## 👥 Autores y Contacto
+¡Gracias por visitar este proyecto! Si tienes dudas sobre el modelado NoSQL o quieres conectar profesionalmente, puedes contactarnos aquí:
+| Autor | Rol | Enlaces Profesionales |
+|---|---|---|
+| *Alejandra Porras, Tammy Barragan, Brayan Hernandez, Ximena Perez* | Data Modeler / Lead Developer/Integration Specialist/Data Seeder | LinkedIn • GitHub • Email |
+| *Colaborador* | Fullstack Developer | LinkedIn • Portfolio |
+© 2026 PetHealth Connect - Desarrollado bajo estándares de Modelado de Datos NoSQL.
