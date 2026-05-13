@@ -93,3 +93,12 @@ Below are the key queries implemented in this deliverable:
 ![Schema Analysis Overview](./img/species.png)
 
 ---
+### 📊 Sprint - Team Status Board
+
+
+| Role | Responsibility | Status | Key Deliverables |
+| :--- | :--- | :--- | :--- |
+| **Integration Specialist** | Comparison Operators | 🔴 Blocked | MQL Query Logic (`$gt`, `$lt`) |
+| **Query Developer** | Data Retrieval | 🟢 Done | Regex & Species Filters |
+| **Lead Architect** | DB Structure | 🟢 Done | English Schema Design |
+| **Data Seeder** | Data Generation | 🟡 Active | Mockaroo Configuration |
