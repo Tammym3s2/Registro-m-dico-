@@ -141,49 +141,9 @@ Below are the key queries implemented in this deliverable:
 ---
 ### 📊 Sprint - Team Status Board
 
-## 📋 Detailed Product Backlog - Sprint S10 (Mundo Animal)
-
-### 1. 🛠️ Integration Specialist (Brayan Hernandez)
-*   **Task ID:** `VET-INT-01`
-*   **Priority:** 🟢 Low
-*   **Status:** `To Do`
-*   **Technical Specification:**
-    *   Transition theoretical MQL filters into live execution environment.
-    *   Validate boundary conditions for advanced queries using `$gt`, `$lt`, `$in`, and `$ne`.
-*   **Definition of Done (DoD):**
-    *   Successful execution of `db.products.find()` with zero compilation or syntax errors.
-    *   Query performance verified inside **MongoDB Compass** explain plan.
-
-### 2. 🧠 Query Developer (Tammy Nashely)
-*   **Task ID:** `VET-QRY-01`
-*   **Priority:** 🟢 Low
-*   **Status:** `To Do`
-*   **Technical Specification:**
-    *   Optimize data retrieval for clinical staff using Indexed fields.
-    *   Refactor current **Regex** filters to ensure case-insensitive matching (`$options: "i"`) for species and date fields.
-*   **Definition of Done (DoD):**
-    *   Execution time of search queries must remain under 50ms using the **MongoDB Profiler**.
-    *   Successful implementation of the phone-number urgency lookup algorithm.
-
-### 3. 📐 Data Modeler & Lead Architect (Alejandra Porras)
-*   **Task ID:** `VET-ARC-01`
-*   **Priority:** 🟢 Low
-*   **Status:** `To Do`
-*   **Technical Specification:**
-    *   Develop structural documentation for the unified English schema.
-    *   Incorporate JSON Schema Validation rules inside MongoDB Atlas to enforce data types for `pets`, `medications`, and `sales`.
-*   **Definition of Done (DoD):**
-    *   Validation scripts must successfully block documents containing Spanish keys or incorrect currency types.
-    *   100% agreement on relational links between `sales` and `medications` collections.
-
-### 4. 🧪 Data Seeder (Research Role)
-*   **Task ID:** `VET-SED-01`
-*   **Priority:** 🟢 Low
-*   **Status:** `To Do`
-*   **Technical Specification:**
-    *   Configure **Mockaroo** formulas for advanced custom conditional logic (linking owner records with pet profiles).
-    *   Execute massive data ingestion using terminal utility tools.
-*   **Definition of Done (DoD):**
-    *   Generate a clean `.json` file containing 1.5 million valid synthetic entities.
-    *   Successful deployment of the dataset via the `mongoimport` CLI utility without dropping active indexes.
-
+| Task ID | Role | Technical Specification | Definition of Done (DoD) | Tech Stack / Tag | Status |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| **VET-INT-01** | **Integration Specialist**<br>*(Brayan Hernandez)* | • Transition MQL filters into live environment.<br>• Validate boundary conditions for `$gt`, `$lt`, `$in`, and `$ne`. | • `db.products.find()` runs with 0 syntax errors.<br>• Query performance verified in MongoDB Compass. | `MQL` / `Atlas` / `Filters` |  🟢 To Do |
+| **VET-QRY-01** | **Query Developer**<br>*(Tammy Nashely)* | • Optimize retrieval times using Indexing.<br>• Refactor Regex filters to enforce case-insensitive matching (`$options: "i"`). | • Execution time stays under 50ms via MongoDB Profiler.<br>• Emergency phone-number lookup algorithm fully verified. | `Regex` / `Indexing` / `Profiler` |  🟢 To Do|
+| **VET-ARC-01** | **Data Modeler & Architect**<br>*(Alejandra Porras)* | • Document the unified English schema foundations.<br>• Implement JSON Schema Validation rules for data types. | • Validation scripts successfully block Spanish keys.<br>• 100% agreement on relational links between collections. | `JSON Schema` / `Validation` | 🟢 To Do |
+| **VET-SED-01** | **Data Seeder**<br>*(Research Role)* | • Configure Mockaroo formulas for conditional logic.<br>• Execute large-scale data ingestion via terminal. | • Generate a clean dataset with 1.5 million valid entities.<br>• Successful import via `mongoimport` CLI tool. | `Mockaroo` / `mongoimport` |  🟢 To Do |
