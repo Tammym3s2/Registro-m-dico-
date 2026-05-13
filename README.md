@@ -1,50 +1,47 @@
-
 # PetHealth Connect: Gestión Veterinaria e Integral
 ## 📖 Tabla de Contenidos
- 1. Descripción del Proyecto
- 2. Guía de Inicio Rápido
- 3. Arquitectura de Datos
- 4. Estructura de Colecciones
- 5. Instalación y Uso
- 6. Tecnologías
-## <a name="descripción"></a>Descripción
+ * Descripción
+ * Guía de Inicio Rápido
+ * Arquitectura de Datos
+ * Estructura de Colecciones
+ * Tecnologías Utilizadas
+ * Autores y Contacto
+## Descripción
 **PetHealth Connect** es una plataforma web integral diseñada para la gestión digital de servicios veterinarios, permitiendo a los dueños de mascotas agendar citas médicas y adquirir medicamentos especializados en un solo ecosistema optimizado. Este proyecto resuelve la desorganización de historiales médicos y la dificultad de acceso a suministros de salud animal, eliminando las barreras de comunicación entre la clínica y el usuario. Para el dueño de una mascota, representa la tranquilidad de tener un control total, rápido y centralizado sobre el bienestar de su compañero.
 ## ⚡ Guía de Inicio Rápido
-Para tener el modelo de datos corriendo en tu máquina local en menos de 5 minutos, sigue estos pasos:
+Para tener el modelo de datos corriendo en tu máquina local en el menor tiempo posible:
  1. **Clonar el repositorio:**
    ```bash
    git clone [https://github.com/tu-usuario/pethealth-connect.git](https://github.com/tu-usuario/pethealth-connect.git)
    cd pethealth-connect
    
    ```
- 2. **Preparar la Base de Datos:**
-   Asegúrate de tener instalado MongoDB Compass o tener una cuenta en MongoDB Atlas.
- 3. **Importar los Datos (Semillas):**
-   Ejecuta los siguientes comandos en tu terminal para cargar los 100 documentos de prueba:
+ 2. **Importar Datos de Prueba:**
+   Asegúrate de tener MongoDB instalado y ejecuta los siguientes comandos para cargar los 100 documentos (50 de dueños/mascotas y 50 de ventas):
    ```bash
-   # Importar Dueños y Mascotas
+   # Importar Colección de Dueños
    mongoimport --db vetDB --collection owners --file data/owners_pets_seed.json --jsonArray
    
-   # Importar Ventas y Citas
+   # Importar Colección de Ventas
    mongoimport --db vetDB --collection sales --file data/sales_seed.json --jsonArray
    
    ```
- 4. **¡Listo!** Abre MongoDB Compass, conéctate a vetDB y comienza a explorar las colecciones.
+ 3. **Verificación:**
+   Abre **MongoDB Compass**, conéctate a tu instancia local y explora la base de datos vetDB.
 ## 🏗️ Arquitectura de Datos
 Como **Data Modeler**, el diseño se centró en la eficiencia de lectura y la integridad histórica utilizando los siguientes patrones NoSQL:
  * **Patrón de Embebido (Embedded Pattern):** Las mascotas están anidadas dentro de sus dueños para reducir la latencia de las consultas de perfil.
  * **Patrón de Desnormalización:** Copia de precios unitarios en las ventas para proteger los registros contables contra cambios de precios en el catálogo.
- * **Esquema Polimórfico:** Uso de objetos flexibles para manejar rasgos específicos de diferentes especies animales sin columnas vacías.
+ * **Esquema Polimórfico:** Uso de objetos flexibles para manejar rasgos específicos de diferentes especies animales.
 ## 📁 Estructura de Colecciones
 El proyecto se divide en dos grandes ejes documentales:
  * **owners (Dueños & Mascotas):** Datos de contacto y perfil médico anidado de cada mascota.
  * **sales (Transacciones & Citas):** Registro de facturación, servicios prestados y medicamentos vendidos.
 ## 🛠️ Tecnologías Utilizadas
- * **Motor de DB:** MongoDB Atlas / Community Server
- * **Lenguaje de Datos:** JSON / BSON
- * **Gestión:** MongoDB Compass
- * **Documentación de Esquemas:** Markdown
-© 2026 PetHealth Connect - Desarrollado bajo estándares de Modelado de Datos NoSQL.
+ * **Motor de Base de Datos:** MongoDB Atlas / Community Server
+ * **Formato de Datos:** JSON / BSON
+ * **Gestión de Datos:** MongoDB Compass
+ * **Documentación Técnica:** Markdown
 © 2026 PetHealth Connect - Desarrollado bajo estándares de Modelado de Datos NoSQL.
 ## 👥 Team Roles and Responsibilities
 
@@ -148,9 +145,11 @@ Below are the key queries implemented in this deliverable:
 | **VET-ARC-01** | **Data Modeler & Architect**<br>*(Alejandra Porras)* | • Document the unified English schema foundations.<br>• Implement JSON Schema Validation rules for data types. | • Validation scripts successfully block Spanish keys.<br>• 100% agreement on relational links between collections. | `JSON Schema` / `Validation` | 🟢 To Do |
 | **VET-SED-01** | **Data Seeder**<br>*(Research Role)* | • Configure Mockaroo formulas for conditional logic.<br>• Execute large-scale data ingestion via terminal. | • Generate a clean dataset with 1.5 million valid entities.<br>• Successful import via `mongoimport` CLI tool. | `Mockaroo` / `mongoimport` |  🟢 To Do |
 ## 👥 Autores y Contacto
-¡Gracias por visitar este proyecto! Si tienes dudas sobre el modelado NoSQL o quieres conectar profesionalmente, puedes contactarnos aquí:
+¡Gracias por visitar este proyecto! Si tienes dudas sobre el modelado NoSQL o quieres conectar profesionalmente para networking, puedes encontrarnos aquí:
 | Autor | Rol | Enlaces Profesionales |
 |---|---|---|
-| *Alejandra Porras, Tammy Barragan, Brayan Hernandez, Ximena Perez* | Data Modeler / Lead Developer/Integration Specialist/Data Seeder | LinkedIn • GitHub • Email |
-| *Colaborador* | Fullstack Developer | LinkedIn • Portfolio |
+| **Alejandra Porras** | Data Modeler | LinkedIn • GitHub |
+| **Tammy Barragán** | The Query Developer | LinkedIn • GitHub |
+| **Brayan Hernández** | The Integration Specialist | LinkedIn • GitHub |
+| **Ximena Pérez** | The Data Seeder  | LinkedIn • GitHub |
 © 2026 PetHealth Connect - Desarrollado bajo estándares de Modelado de Datos NoSQL.
