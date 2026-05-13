@@ -1,29 +1,50 @@
+
 # PetHealth Connect: Gestión Veterinaria e Integral
-## Descripción
-**PetHealth Connect** es una plataforma web integral diseñada para la gestión digital de servicios veterinarios, permitiendo a los dueños de mascotas agendar citas médicas y adquirir medicamentos especializados en un solo ecosistema optimizado. Este proyecto resuelve la desorganización de historiales médicos y la dificultad de acceso a suministros de salud animal, eliminando las barreras de comunicación entre la clínica y el usuario. Para el dueño de una mascota, representa la tranquilidad de tener un control total, rápido y centralizado sobre el bienestar de su compañero, asegurando que el cuidado médico y farmacéutico esté a un solo clic de distancia.
-## 🏗️ Rol del Colaborador: Data Modeler
-Como responsable del modelado de datos, el enfoque principal de este repositorio es la arquitectura de la base de datos NoSQL en MongoDB, asegurando la integridad, escalabilidad y eficiencia en las consultas.
-### Características del Modelo de Datos:
- * **Patrón de Embebido:** Optimización de lecturas mediante la anidación de mascotas dentro de sus respectivos dueños.
- * **Integridad Financiera:** Desnormalización de precios en la colección de ventas para mantener registros históricos exactos.
- * **Polimorfismo:** Estructura flexible para soportar diversas especies de mascotas con rasgos específicos.
-## 📁 Estructura de Datos (Semillas)
-El proyecto incluye dos colecciones principales con 100 documentos de prueba para validación:
- 1. **Owners & Pets:** Registro de dueños y sus mascotas anidadas.
- 2. **Sales:** Registro de transacciones, citas y medicamentos adquiridos.
-## 🛠️ Tecnologías Utilizadas
- * **Base de Datos:** MongoDB Atlas (Cloud)
- * **Formato de Datos:** JSON
- * **Modelado:** NoSQL / Documental
-## 🚀 Instalación y Uso
-Para probar los datos en tu entorno local o en MongoDB Atlas:
- 1. Clona este repositorio.
- 2. Localiza los archivos owners_pets_seed.json y sales_seed.json.
- 3. Importa los archivos usando MongoDB Compass o la terminal:
+## 📖 Tabla de Contenidos
+ 1. Descripción del Proyecto
+ 2. Guía de Inicio Rápido
+ 3. Arquitectura de Datos
+ 4. Estructura de Colecciones
+ 5. Instalación y Uso
+ 6. Tecnologías
+## <a name="descripción"></a>Descripción
+**PetHealth Connect** es una plataforma web integral diseñada para la gestión digital de servicios veterinarios, permitiendo a los dueños de mascotas agendar citas médicas y adquirir medicamentos especializados en un solo ecosistema optimizado. Este proyecto resuelve la desorganización de historiales médicos y la dificultad de acceso a suministros de salud animal, eliminando las barreras de comunicación entre la clínica y el usuario. Para el dueño de una mascota, representa la tranquilidad de tener un control total, rápido y centralizado sobre el bienestar de su compañero.
+## ⚡ Guía de Inicio Rápido
+Para tener el modelo de datos corriendo en tu máquina local en menos de 5 minutos, sigue estos pasos:
+ 1. **Clonar el repositorio:**
    ```bash
-   mongoimport --uri "tu_cadena_de_conexion" --collection owners --file owners_pets_seed.json --jsonArray
+   git clone [https://github.com/tu-usuario/pethealth-connect.git](https://github.com/tu-usuario/pethealth-connect.git)
+   cd pethealth-connect
    
    ```
+ 2. **Preparar la Base de Datos:**
+   Asegúrate de tener instalado MongoDB Compass o tener una cuenta en MongoDB Atlas.
+ 3. **Importar los Datos (Semillas):**
+   Ejecuta los siguientes comandos en tu terminal para cargar los 100 documentos de prueba:
+   ```bash
+   # Importar Dueños y Mascotas
+   mongoimport --db vetDB --collection owners --file data/owners_pets_seed.json --jsonArray
+   
+   # Importar Ventas y Citas
+   mongoimport --db vetDB --collection sales --file data/sales_seed.json --jsonArray
+   
+   ```
+ 4. **¡Listo!** Abre MongoDB Compass, conéctate a vetDB y comienza a explorar las colecciones.
+## 🏗️ Arquitectura de Datos
+Como **Data Modeler**, el diseño se centró en la eficiencia de lectura y la integridad histórica utilizando los siguientes patrones NoSQL:
+ * **Patrón de Embebido (Embedded Pattern):** Las mascotas están anidadas dentro de sus dueños para reducir la latencia de las consultas de perfil.
+ * **Patrón de Desnormalización:** Copia de precios unitarios en las ventas para proteger los registros contables contra cambios de precios en el catálogo.
+ * **Esquema Polimórfico:** Uso de objetos flexibles para manejar rasgos específicos de diferentes especies animales sin columnas vacías.
+## 📁 Estructura de Colecciones
+El proyecto se divide en dos grandes ejes documentales:
+ * **owners (Dueños & Mascotas):** Datos de contacto y perfil médico anidado de cada mascota.
+ * **sales (Transacciones & Citas):** Registro de facturación, servicios prestados y medicamentos vendidos.
+## 🛠️ Tecnologías Utilizadas
+ * **Motor de DB:** MongoDB Atlas / Community Server
+ * **Lenguaje de Datos:** JSON / BSON
+ * **Gestión:** MongoDB Compass
+ * **Documentación de Esquemas:** Markdown
+© 2026 PetHealth Connect - Desarrollado bajo estándares de Modelado de Datos NoSQL.
 © 2026 PetHealth Connect - Desarrollado bajo estándares de Modelado de Datos NoSQL.
 ## 👥 Team Roles and Responsibilities
 
