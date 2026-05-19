@@ -1,4 +1,4 @@
-# PetHealth Connect: Gestión Veterinaria e Integral
+a# PetHealth Connect: Gestión Veterinaria e Integral
 ## 📖 Tabla de Contenidos
  * Descripción
  * Guía de Inicio Rápido
@@ -138,6 +138,138 @@ Below are the key queries implemented in this deliverable:
 ---
 ### 📊 Sprint - Team Status Board
 
+# Product Backlog - Mundo Animal Veterinary Management System
+
+## Product Goal
+Develop a NoSQL veterinary management system in MongoDB Atlas that allows registration of pets, owners, medications, and sales, while supporting efficient queries, updates, and analytics for veterinary administration.
+
+---
+
+## Epic 1: Database Setup and Configuration
+### User Stories
+- As a developer, I want to configure the development environment so the team can start the project.
+- As a team member, I want to connect MongoDB Atlas with Compass and VS Code so I can manage collections easily.
+
+### Tasks
+- [x] Install VS Code, MongoDB Compass, Git
+- [x] Create MongoDB Atlas cluster
+- [x] Configure connection string
+- [x] Set security access (IP whitelist)
+- [x] Create initial repository and README.md
+
+---
+
+## Epic 2: Data Modeling
+### User Stories
+- As a Data Modeler, I want to design JSON document structures so pet and owner data can be stored correctly.
+- As a system, I need embedded documents to simplify pet-owner access.
+
+### Tasks
+- [x] Design `pets` collection schema
+- [x] Design `medications` collection schema
+- [x] Design `sales` collection schema
+- [x] Define embedding vs referencing strategy
+- [x] Create Mermaid ER diagram
+- [x] Validate nested object hierarchy
+
+---
+
+## Epic 3: Data Seeding
+### User Stories
+- As a QA/Data Seeder, I want realistic test datasets so the system can be validated under multiple scenarios.
+
+### Tasks
+- [x] Generate `seeds.json` with +50 records
+- [x] Create edge cases (ages 0, 25, invalid values)
+- [x] Create linked datasets between collections
+- [x] Test fat documents
+- [x] Import data with `mongoimport`
+
+---
+
+## Epic 4: Query Development
+### User Stories
+- As a Query Developer, I want to retrieve pet and sales information using MQL so admins can access reports.
+
+### Tasks
+- [x] Basic queries with `find()` and `findOne()`
+- [x] Filters using `$gt`, `$lt`, `$in`, `$ne`
+- [x] Logical operators `$and`, `$or`, `$not`
+- [x] Regex date filtering
+- [x] Search by owner phone number
+- [x] Query optimization with projections
+- [x] Test `$slice` operator
+
+---
+
+## Epic 5: Data Mutation
+### User Stories
+- As an Integration Specialist, I want to update records dynamically so the system remains accurate.
+
+### Tasks
+- [ ] Implement `$set`
+- [ ] Implement `$inc`
+- [ ] Implement `$push`
+- [ ] Implement delete operations
+- [ ] Validate updates in terminal
+- [ ] Connect Node.js backend
+
+---
+
+## Epic 6: Aggregation and Analytics
+### User Stories
+- As an admin, I want summarized reports so I can analyze veterinary operations.
+
+### Tasks
+- [ ] Create aggregation pipeline with `$match`
+- [ ] Group records using `$group`
+- [ ] Count documents with `$count`
+- [ ] Create advanced reports with `$project`
+- [ ] Sort results with `$sort`
+- [ ] Join collections with `$lookup`
+
+---
+
+## Epic 7: Performance Optimization
+### User Stories
+- As a QA engineer, I want to validate performance so the database works efficiently with large datasets.
+
+### Tasks
+- [ ] Create indexes
+- [ ] Test query speed
+- [ ] Use `.explain("executionStats")`
+- [ ] Compare before/after indexes
+- [ ] Document performance audit
+
+---
+
+## Sprint Retrospective Tasks
+- [x] Identify access issues to Atlas
+- [x] Resolve terminal syntax errors
+- [x] Standardize English naming in collections
+- [x] Improve query filters
+- [x] Weekly report generation
+- [x] GitHub artifact documentation
+
+---
+
+## Team Roles
+| Role | Member | Responsibility |
+|------|--------|----------------|
+| Scrum Master | Annel Ricaño | Sprint planning, retrospective, blockers |
+| Data Modeler | Alejandra Porras | JSON schema design |
+| Query Developer | Tammy Nashely | MQL queries |
+| Data Seeder / QA | Ximena Rosas | Dataset generation and testing |
+| Integration Specialist | Brayan Hernandez | MongoDB + Node.js connection |
+
+---
+
+## Current Sprint
+### Sprint 3 - Data Intelligence
+- [ ] Aggregation pipelines
+- [ ] Index optimization
+- [ ] Final demo preparation
+- [ ] Release v3.0
 | Task ID | Role | Technical Specification | Definition of Done (DoD) | Tech Stack / Tag | Status |
 | :--- | :--- | :--- | :--- | :--- | :--- |
 | **VET-INT-01** | **Integration Specialist**<br>*(Brayan Hernandez)* | • Transition MQL filters into live environment.<br>• Validate boundary conditions for `$gt`, `$lt`, `$in`, and `$ne`. | • `db.products.find()` runs with 0 syntax errors.<br>• Query performance verified in MongoDB Compass. | `MQL` / `Atlas` / `Filters` |  🟢 To Do |
