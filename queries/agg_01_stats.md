@@ -74,8 +74,8 @@ Filters sales greater than zero and groups them by payment method to obtain tota
 
   }
 
-]```
-
+]
+```
 
 
 **Compass Result:**
@@ -120,7 +120,8 @@ Classifies and accumulates financial revenue and sales volume based on the type 
 
   }
 
-]```
+]
+```
 
 
 
@@ -158,7 +159,8 @@ Isolates transactions via a filter and directly counts in a single stage how man
 
   }
 
-]```
+]
+```
 
 
 
