@@ -162,7 +162,7 @@ Isolates transactions via a filter and directly counts in a single stage how man
 ]
 ```
 
-(/img/cash.png)
+!(/img/cash.png)
 
 **Compass Result:**
 
