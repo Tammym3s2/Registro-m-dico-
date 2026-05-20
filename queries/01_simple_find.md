@@ -11,7 +11,7 @@ Below are the key queries implemented in this deliverable:
 * **Code:** `{ "pet.species": "Turtle" }`
 * **Field used:** `pet.species` to filter by taxonomic categories.
 
-![Turtle Query](./img/turtle.png)
+![Turtle Query](/img/turtle.png)
 
 ---
 
@@ -20,7 +20,7 @@ Below are the key queries implemented in this deliverable:
 * **Code:** `{ "pet.specific_traits.is_indoor": true }`
 * **Field used:** `pet.specific_traits.is_indoor` (boolean).
 
-![Indoor Pets](./img/domesticos.png)
+![Indoor Pets](/img/domesticos.png)
 
 ---
 
@@ -29,7 +29,7 @@ Below are the key queries implemented in this deliverable:
 * **Code:** `{ "pet.specific_traits.fur_color": "White" }`
 * **Field used:** `pet.specific_traits.fur_color`.
 
-![Color Query](./img/colorson.png)
+![Color Query](/img/colorson.png)
 
 ---
 
@@ -38,7 +38,7 @@ Below are the key queries implemented in this deliverable:
 * **Code:** `{ "vet_visit.reason": "Deworming" }`
 * **Field used:** `vet_visit.reason`.
 
-![Visit Reason](./img/razonvisita.png)
+![Visit Reason](/img/razonvisita.png)
 
 ---
 
@@ -47,7 +47,7 @@ Below are the key queries implemented in this deliverable:
 * **Code:** `{ "owner.owner_id": "OWN-7721" }`
 * **Field used:** `owner.owner_id`.
 
-![Owner ID](./img/iddueño.png)
+![Owner ID](/img/iddueño.png)
 
 ---
 
@@ -57,8 +57,8 @@ Below are the key queries implemented in this deliverable:
 * **Code (Year):** `{ "vet_visit.date": /2026/ }`
 * **Technique:** Use of Regular Expressions (Regex).
 
-![January Search](./img/buscar%20mes.png)
-![2026 Search](./img/buscaraño.png)
+![January Search](/img/buscar%20mes.png)
+![2026 Search](/img/buscaraño.png)
 
 ---
 
@@ -67,7 +67,7 @@ Below are the key queries implemented in this deliverable:
 * **Code:** `{ "owner.phone_number": "973-792-3632" }` 
 * **Field used:** `owner.phone_number`.
 
-![Phone Query](./img/busca%20tel.png)
+![Phone Query](/img/busca%20tel.png)
 
 ---
 
