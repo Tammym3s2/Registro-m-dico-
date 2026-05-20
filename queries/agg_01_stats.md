@@ -76,7 +76,7 @@ Filters sales greater than zero and groups them by payment method to obtain tota
 
 ]
 ```
-![IMG](/primer/cash.png)
+![IMG](/img/primer.png)
 
 **Compass Result:**
 
@@ -123,7 +123,7 @@ Classifies and accumulates financial revenue and sales volume based on the type 
 ]
 ```
 
-![IMG](/service/cash.png)
+![IMG](/img/service.png)
 
 **Compass Result:**
 
