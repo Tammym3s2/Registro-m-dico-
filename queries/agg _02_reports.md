@@ -108,7 +108,8 @@ This query processes data from available medications to calculate the total valu
 #### Result Summary:
  The pipeline transforms technical variables like name_medication and stock into clean labels (medicamento, disponibles). Using the $multiply function, it dynamically calculates the total investment per product (for example, showing that the dewormer HeartGard has 54 units at a price of 580, representing a total stock value of 31,320). Sorting ensures that the UI displays the medications representing the highest financial asset for the clinic first.
 
- 
+
+ ---
 ### 3. Purchase History Report by Patient (`pets`)
 This query links the patient collection with the sales collection to identify client buying behavior and revenue generated per pet.
 
