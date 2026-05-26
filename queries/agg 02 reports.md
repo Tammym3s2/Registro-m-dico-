@@ -24,10 +24,48 @@ This query runs from the `sales` collection to link each buyer with their regist
 
 #### MQL Query:
 
+```
+[
+  {
+    $lookup: {
+      from: "pets",
+      localField: "full_name",
+      foreignField: "full_name",
+      as: "datos_mascota"
+    }
+  },
+  {
+    $unwind: {
+      path: "$datos_mascota",
+      preserveNullAndEmptyArrays: true
+    }
+  },
+  {
+    $project: {
+      _id: 1,
+      cliente: "$full_name",
+      correo: "$email",
+      total_venta: "$total_amount",
+      metodo_pago: "$payment_method",
+      fecha_venta: "$sale_date",
+      nombre_mascota: { $ifNull: ["$datos_mascota.pet_name", "Sin mascota"] },
+      especie: { $ifNull: ["$datos_mascota.species", "N/A"] },
+      color: { $ifNull: ["$datos_mascota.fur_color", "N/A"] },
+      ganancia_neta: { $multiply: ["$total_amount", 0.85] }
+    }
+  },
+  {
+    $sort: {
+      total_venta: -1,
+      fecha_venta: -1
+    }
+  },
+  {
+    $limit: 10
+  }
+]
 
-
-
-
+```
 
 #### Result Summary:
 The pipeline maps the `sales` collection with the clinic's patients directly. It modifies variables from the original document to structure a clean JSON response (`cliente`, `correo`, `total_venta`). It enriches the output by bringing in pet fields such as `nombre_mascota: "iris"` and `especie: "felina"`. Additionally, it applies a mathematical operation to automatically calculate the `ganancia_neta` by subtracting an estimated percentage, delivering processed information ready for the UI financial charts.
@@ -39,17 +77,80 @@ This query processes data from available medications to calculate the total valu
 
 #### MQL Query:
 
+```
+[
+  {
+    $project: {
+      _id: 0,
+      codigo: "$id_medication",
+      medicamento: "$name_medication",
+      laboratorio: "$laboratory",
+      precio_unidad: "$price",
+      disponibles: "$stock",
+      especie_destino: "$specie",
+      valor_total_stock: { $multiply: ["$price", "$stock"] }
+    }
+  },
+  {
+    $sort: {
+      valor_total_stock: -1,
+      disponibles: 1
+    }
+  },
+  {
+    $limit: 10
+  }
+]
 
 
-
-
+```
 
 #### Result Summary:
 The pipeline transforms technical variables like `name_medication` and `stock` into clean labels (`medicamento`, `disponibles`). Using the `$multiply` function, it dynamically calculates the total investment per product (for example, showing that the dewormer HeartGard has 54 units at a price of 580, representing a total stock value of 31,320). Sorting ensures that the UI displays the medications representing the highest financial asset for the clinic first.
-
 ---
 
 ### 3. Purchase History Report by Patient (`pets`)
 This query links the patient collection with the sales collection to identify client buying behavior and revenue generated per pet.
 
 #### MQL Query:
+
+```
+[
+  {
+    $lookup: {
+      from: "sales",
+      localField: "full_name",
+      foreignField: "full_name",
+      as: "historial_compras"
+    }
+  },
+  {
+    $unwind: {
+      path: "$historial_compras",
+      preserveNullAndEmptyArrays: false
+    }
+  },
+  {
+    $project: {
+      _id: 1,
+      nombre_mascota: "$pet_name",
+      especie: "$species",
+      dueno: "$full_name",
+      telefono: "$phone_number",
+      total_ticket: "$historial_compras.total_amount",
+      fecha_pago: "$historial_compras.sale_date",
+      metodo_pago: "$historial_compras.payment_method"
+    }
+  },
+  {
+    $sort: {
+      total_ticket: -1
+    }
+  },
+  {
+    $limit: 10
+  }
+]
+
+
+```
