@@ -66,6 +66,7 @@ This query runs from the `sales` collection to link each buyer with their regist
 ]
 
 ```
+![IMG](/img/sales.png)
 
 #### Result Summary:
 The pipeline maps the `sales` collection with the clinic's patients directly. It modifies variables from the original document to structure a clean JSON response (`cliente`, `correo`, `total_venta`). It enriches the output by bringing in pet fields such as `nombre_mascota: "iris"` and `especie: "felina"`. Additionally, it applies a mathematical operation to automatically calculate the `ganancia_neta` by subtracting an estimated percentage, delivering processed information ready for the UI financial charts.
@@ -104,7 +105,7 @@ This query processes data from available medications to calculate the total valu
 
 
 ```
-
+![IMG](/img/medicamentos.png)
 #### Result Summary:
  The pipeline transforms technical variables like name_medication and stock into clean labels (medicamento, disponibles). Using the $multiply function, it dynamically calculates the total investment per product (for example, showing that the dewormer HeartGard has 54 units at a price of 580, representing a total stock value of 31,320). Sorting ensures that the UI displays the medications representing the highest financial asset for the clinic first.
 
@@ -155,3 +156,8 @@ This query links the patient collection with the sales collection to identify cl
 
 
 ```
+![IMG](/img/pets.png)
+#### Result Summary:
+This precisely matches the pet owner with their store or pharmacy transactions using the `full_name` field. The final result unifies patient data (`nombre_mascota: "chester"`, `especie: "felina"`) with the commercial breakdown of their visit (`total_ticket: 1280`, `metodo_pago: "card"`) into a single object. This allows the Frontend team to directly render frequent customer tables and billing reports without needing to make multiple requests or heavy data processing in the browser.
+
+
