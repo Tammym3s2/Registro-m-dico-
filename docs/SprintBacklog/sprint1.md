@@ -187,3 +187,17 @@
 - Initialization scripts
 - Seed dataset
 - RELEASE v1.0 ready for deployment
+
+---
+
+## 6. Impediments & Dependencies
+
+- *Dependency:* MongoDB Atlas connection and GitHub repository access must be configured before initializing collections and executing database scripts.
+
+- *Dependency:* JSON/BSON validation is required before inserting documents into MongoDB collections.
+
+- *Dependency:* MongoDB Compass and VS Code environment setup must be completed before executing query and initialization scripts.
+
+- *Impediment:* Possible connection issues between MongoDB Compass and MongoDB Atlas due to incorrect Connection String configuration.
+
+- *Impediment:* Inconsistent or invalid JSON syntax could generate insertion errors during seed data loading.
