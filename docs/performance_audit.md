@@ -70,6 +70,8 @@ Running the updated explain plan on the owner reference completely bypassed the 
 | *Case 1:* { pet_name: "iris" } | Execution Stage<br><br>Docs Examined<br><br>Structure Used | COLLSCAN<br><br>59 documents<br><br>None (Raw Data Table) | IXSCAN + FETCH<br><br>1 document<br><br>Index: pet_name_1 | Replaced blind brute-force table scanning with structural tree pointer search. |
 | *Case 2:* { owner_id: "OWN-177..." } | Execution Stage<br><br>Docs Examined<br><br>Structure Used | COLLSCAN<br><br>59 documents<br><br>None (Raw Data Table) | IXSCAN + FETCH<br><br>1 document<br><br>Index: owner_id_1 | Instant grouping of nested relations, eliminating 98.3% of overhead disk reads. |
 
+![imagen](/img/index.png)
+
 ---
 
 ## 5. Query Developer Conclusion
