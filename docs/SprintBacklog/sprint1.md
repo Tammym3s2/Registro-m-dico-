@@ -10,17 +10,17 @@
 
 # Sprint 1 — "Project Setup & NoSQL Foundations"
 
-**Duration:** 2 weeks  
+**Duration:** 4 weeks  
 **Objective:** Configure the development environment, understand NoSQL fundamentals, and establish the initial project architecture.
 
 ---
 
 ## Sorint Paramentrer & Capacity Plan
-* Sprint Duration: 2 week
+* Sprint Duration: 4 week
 * Daily Commitment: 2 hours (Monday-Friday)
-* Total Sprint Capacity: 40 hours
-* Estimated Workload: 20 hours
-* Buffer: 20 hours
+* Total Sprint Capacity: 250 hours
+* Estimated Workload: 100 hours
+* Buffer: 100 hours
 
 ---
 
