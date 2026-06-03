@@ -1,6 +1,6 @@
 # Database Performance Audit & Indexing Report (Week 16)
 *Project:* Mundo Animal (Veterinary Management System)  
-*Developer:* Tami (Query Developer)  
+*Developer:* Tammy (Query Developer)  
 *Date:* June 2, 2026  
 
 ---
@@ -58,6 +58,8 @@ Before optimization, MongoDB Compass flagged a warning stating "No index availab
 
 ### Optimized Status (IXSCAN)
 Running the updated explain plan on the owner reference completely bypassed the raw database documents scan. The planner used the new owner_id_1 tree map, reducing documents examined from 59 to exactly 1, bringing the overall processing runtime down to $0\text{ ms}$.
+
+![imagen](/img/ownerIXS.png)
 
 ---
 
