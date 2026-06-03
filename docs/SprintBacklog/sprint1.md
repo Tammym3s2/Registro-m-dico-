@@ -2,12 +2,6 @@
 
 ---
 
-## Context
-
-The current pet management system faces the challenge of handling highly heterogeneous data due to biological and care differences between species. The project focuses on designing a flexible NoSQL architecture using MongoDB to store species-specific information while maintaining data integrity and scalability.
-
----
-
 # Sprint 1 — "Project Setup & NoSQL Foundations"
 
 **Duration:** 2 weeks  
@@ -17,7 +11,7 @@ The current pet management system faces the challenge of handling highly heterog
 
 ## Sprint Goal
 
-> Prepare the complete development environment and create the initial NoSQL project structure for a flexible pet management system using MongoDB.
+> Implement MongoDB querying and document mutation features for the pet management system, allowing users to retrieve specific pet records, apply advanced filters based on species characteristics, execute logical search conditions, and update pet information dynamically without affecting document integrity.
 
 ---
 
