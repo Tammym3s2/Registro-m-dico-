@@ -55,18 +55,6 @@
 
 ---
 
-## Definition of Done
-
-* [x] All scripts execute without errors
-* [x] Database connection works correctly
-* [x] JSON/BSON structures validated
-* [x]  Repository uploaded to GitHub
-* [x] Documentation completed
-* [x] MongoDB collections created successfully
-* [x] Seed data inserted correctly into database
-
----
-
 ## Technical Tasks
 
 ### SP1-01 — Development Environment Setup
@@ -202,3 +190,17 @@
 - *Impediment:* Possible connection issues between MongoDB Compass and MongoDB Atlas due to incorrect Connection String configuration.
 
 - *Impediment:* Inconsistent or invalid JSON syntax could generate insertion errors during seed data loading.
+
+---
+
+---
+
+## Definition of Done
+
+* [x] All scripts execute without errors
+* [x] Database connection works correctly
+* [x] JSON/BSON structures validated
+* [x]  Repository uploaded to GitHub
+* [x] Documentation completed
+* [x] MongoDB collections created successfully
+* [x] Seed data inserted correctly into database
