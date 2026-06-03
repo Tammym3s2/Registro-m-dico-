@@ -177,6 +177,7 @@
   - Prepare RELEASE v1.0 tag for deployment and presentation.
 
 - *Friday Milestone:* Project documentation completed and RELEASE v1.0 ready for submission.
+  
 ---
 
 ## Expected Deliverables
@@ -190,7 +191,7 @@
 
 ---
 
-## 6. Impediments & Dependencies
+## Impediments & Dependencies
 
 - *Dependency:* MongoDB Atlas connection and GitHub repository access must be configured before initializing collections and executing database scripts.
 
