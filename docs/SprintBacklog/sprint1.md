@@ -14,6 +14,13 @@
 > Implement MongoDB querying and document mutation features for the pet management system, allowing users to retrieve specific pet records, apply advanced filters based on species characteristics, execute logical search conditions, and update pet information dynamically without affecting document integrity.
 
 ---
+## Sorint Paramentrer & Capacity Plan
+* Sprint Duration: 2 week
+* Daily Commitment: 2 hours (Monday-Friday)
+* Total Sprint Capacity: 40 hours
+* Estimated Workload: 20 hours
+* Buffer: 20 hours
+---
 
 ## Sprint Backlog
 
@@ -106,18 +113,6 @@
 1. Review repository structure
 2. Validate loaded data
 3. Create RELEASE v1.0 tag
-
----
-
-## Technologies Used
-
-- MongoDB
-- MongoDB Atlas
-- MongoDB Compass
-- Git & GitHub
-- VS Code
-- Mermaid.js
-- JSON/BSON
 
 ---
 
