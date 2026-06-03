@@ -41,17 +41,19 @@
 **Total:** 20 points
 
 ---
-
 ## Sprint Acceptance Criteria
 
-- VS Code, Git, and MongoDB Compass are correctly installed
-- Repository contains README.md with signed Student Pledge
-- JSON files are valid and correctly formatted
-- Mermaid.js ER diagram accurately represents the database schema
-- MongoDB Atlas cluster is connected successfully
-- Collections are initialized without errors
-- Seed dataset contains at least 50 valid documents
-- Repository is ready for RELEASE v1.0
+| Sprint Backlog ID | Acceptance Criteria | Validation Method |
+|---|---|---|
+| SP1-01 | VS Code, Git, and MongoDB Compass are correctly installed and configured on the development machine. | Verify successful installation and screenshots of configured tools. |
+| SP1-02 | Repository contains a complete README.md file and signed Student Pledge. | Review repository structure and documentation files. |
+| SP1-03 | JSON and BSON files are syntactically valid and represent real-world entities correctly. | Validate files using MongoDB Compass or JSON validator tools. |
+| SP1-04 | ABP project idea, objectives, and system requirements are clearly documented. | Review project proposal documentation. |
+| SP1-05 | Mermaid.js ER diagram accurately represents entities, attributes, and relationships of the database schema. | Inspect diagram consistency with project requirements. |
+| SP1-06 | MongoDB Atlas cluster is successfully created and database connection works properly. | Test database connectivity from MongoDB Compass or application. |
+| SP1-07 | Collection initialization script executes without errors and creates all required collections. | Run initialization script and verify collections in MongoDB Atlas. |
+| SP1-08 | Seed dataset contains at least 50 valid documents distributed across collections. | Verify document count and validate sample records. |
+| SP1-09 | Repository is organized, documented, and prepared for RELEASE v1.0 presentation. | Review repository release version, documentation, and final structure. |
 
 ---
 
