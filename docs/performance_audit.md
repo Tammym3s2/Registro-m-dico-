@@ -32,6 +32,8 @@ Lacking an optimization key, MongoDB ran a full collection scan. It examined all
 ### Optimized Status (IXSCAN)
 After clearing the database cache layer, re-evaluating the plan showed that the strategy shifted to *IXSCAN + FETCH*. MongoDB searched our new B-Tree index structure in RAM and examined strictly 1 document, achieving optimal 100% data access efficiency.
 
+![imagen](/img/petname.png)
+
 ---
 
 ## 3. Case Study 2: Fetching Patient Records by Owner ID
