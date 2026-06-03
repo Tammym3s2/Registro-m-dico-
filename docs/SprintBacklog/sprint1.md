@@ -54,13 +54,13 @@ The current pet management system faces the challenge of handling highly heterog
 
 ## Definition of Done
 
-- All scripts execute without errors
-- Database connection works correctly
-- JSON/BSON structures validated
-- Repository uploaded to GitHub
-- Documentation completed
-- MongoDB collections created successfully
-- Seed data inserted correctly into database
+*[ ] All scripts execute without errors
+*[ ] Database connection works correctly
+*[ ] JSON/BSON structures validated
+*[ ]  Repository uploaded to GitHub
+*[ ] Documentation completed
+*[ ] MongoDB collections created successfully
+*[ ] Seed data inserted correctly into database
 
 ---
 
