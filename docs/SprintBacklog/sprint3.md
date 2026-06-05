@@ -4,14 +4,14 @@
 
 ## Sprint Goal
 
-> Implement and validate MongoDB query and document management operations for the pet management system, enabling efficient data retrieval, advanced filtering, logical searches, document updates, and array manipulation while maintaining database integrity, optimized performance, and consistent data management across all collections.
+> Develop advanced MongoDB data processing features for the Pet Management System by implementing aggregation pipelines, analytical reporting, performance optimization through indexing, and final project integration. The sprint focuses on improving data analysis, query efficiency, and system scalability while maintaining flexibility for heterogeneous pet information management.
 
 ---
 
 # Sprint 3 — "MongoDB Queries & Document Operations"
 
 **Duration:** 4 weeks  
-**Objective:** Implement MongoDB read, filtering, logical, and update operations to improve data management and querying within the pet management system.
+**Objective:** Implement advanced MongoDB aggregation pipelines, reporting tools, indexing strategies, and final system optimization to support efficient management of heterogeneous pet data.
 
 ---
 
@@ -29,15 +29,14 @@
 
 | ID | User Story | Description | Priority | Estimation |
 |----|-----------|-------------|----------|------------|
-| SP3-01 | Basic Read Queries | Implement `find()` and `findOne()` queries for pet collections | High | 3 pts |
-| SP3-02 | Projection Queries | Create projections to return only specific pet fields | Medium | 2 pts |
-| SP3-03 | Advanced Filters | Add filtering using `$gt`, `$lt`, `$in`, and `$ne` operators | High | 4 pts |
-| SP3-04 | Logical Queries | Implement complex searches using `$and`, `$or`, and `$not` | High | 4 pts |
-| SP3-05 | Update Pet Information | Modify pet documents using `$set` and `$inc` | Medium | 3 pts |
-| SP3-06 | Array Data Management | Add new medical records or comments using `$push` | Medium | 3 pts |
-| SP3-07 | Query Testing & Optimization | Test and validate all MongoDB queries | Low | 2 pts |
-
-**Total:** 21 points
+| SP3-01 | Aggregation Pipeline Introduction | Implement MongoDB aggregation pipelines using `$match`, `$group`, and `$count` for statistical analysis of pet records | High | 15 hrs |
+| SP3-02 | Basic Analytics Reports | Create analytical reports for totals, counts, and grouped species statistics | High | 10 hrs |
+| SP3-03 | Advanced Reporting Pipelines | Develop advanced aggregation pipelines using `$project`, `$sort`, `$limit`, and `$lookup` | High | 18 hrs |
+| SP3-04 | UI Data Transformation | Transform MongoDB data structures into frontend-friendly report formats | Medium | 12 hrs |
+| SP3-05 | MongoDB Index Optimization | Implement indexes with `createIndex()` to improve query performance | High | 15 hrs |
+| SP3-06 | Query Performance Audit | Analyze and compare query execution before and after indexing using `.explain("executionStats")` | High | 10 hrs |
+| SP3-07 | Final System Integration | Integrate aggregation, reporting, optimization, and CRUD modules into the final application | High | 12 hrs |
+| SP3-08 | Final Release Preparation | Prepare final repository structure, documentation, README, and deployment files | Medium | 8 hrs |
 
 ---
 
@@ -45,157 +44,93 @@
 
 | Sprint Backlog ID | Acceptance Criteria | Validation Method |
 |---|---|---|
-| SP3-01 | `find()` and `findOne()` queries retrieve the correct pet records from collections. | Execute queries and verify returned documents in MongoDB Compass. |
-| SP3-02 | Projection queries display only the requested fields without modifying original documents. | Compare query outputs with stored database records. |
-| SP3-03 | Advanced filtering operators return accurate and properly filtered results. | Validate queries using multiple pet attributes and conditions. |
-| SP3-04 | Logical operators correctly execute complex search conditions across collections. | Test combined conditions and review returned data consistency. |
-| SP3-05 | Pet documents are updated correctly using `$set` and `$inc` operations. | Modify sample records and verify updates inside MongoDB Atlas. |
-| SP3-06 | Array elements are inserted correctly using `$push` without affecting existing data. | Validate updated arrays in medical history and comments fields. |
-| SP3-07 | All MongoDB queries execute efficiently and without errors. | Run testing sessions and validate query performance results. |
+| SP3-01 | Aggregation pipelines execute correctly and return grouped statistical data | MongoDB Compass testing |
+| SP3-02 | Reports display correct totals, counts, and categorized pet information | Manual validation with sample data |
+| SP3-03 | Advanced pipelines successfully transform and organize data for reporting | Query result verification |
+| SP3-04 | Frontend receives clean and formatted JSON structures | UI integration testing |
+| SP3-05 | Database indexes are successfully created on critical fields | MongoDB index inspection |
+| SP3-06 | Query execution time improves after indexing implementation | `.explain("executionStats")` comparison |
+| SP3-07 | All project modules work together without integration errors | Full system testing |
+| SP3-08 | Final repository includes functional documentation and deployment instructions | GitHub repository review |
 
 ---
 
 ## Technical Tasks
 
-### SP3-01 — Basic Read Queries
-1. Create `find()` queries for pet collections
-2. Implement `findOne()` searches
-3. Validate returned documents
-4. Test queries in MongoDB Compass
+### Week S14 — Aggregation Intro
+- Implement `$match`, `$group`, and `$count`
+- Create statistical aggregation pipelines
+- Generate basic analytics reports
+- Build `queries/agg_01_stats.mongodb`
 
-### SP3-02 — Projection Queries
-1. Select specific fields from documents
-2. Exclude unnecessary attributes
-3. Validate projection outputs
-4. Compare query responses
+### Week S15 — Advanced Pipelines
+- Implement `$project`, `$sort`, `$limit`, and `$lookup`
+- Create advanced reporting pipelines
+- Transform data structures for frontend integration
+- Build `queries/agg_02_reports.mongodb`
 
-### SP3-03 — Advanced Filters
-1. Apply `$gt` and `$lt` conditions
-2. Implement `$in` queries
-3. Use `$ne` exclusion filters
-4. Validate filtered results
+### Week S16 — Indexes & Performance
+- Create indexes using `createIndex()`
+- Analyze query performance with `.explain()`
+- Compare execution statistics before/after indexing
+- Build `docs/performance_audit.md`
 
-### SP3-04 — Logical Queries
-1. Implement `$and` conditions
-2. Create `$or` combinations
-3. Apply `$not` filters
-4. Test complex query logic
-
-### SP3-05 — Update Pet Information
-1. Modify fields using `$set`
-2. Increment numeric values using `$inc`
-3. Validate updated documents
-4. Verify database consistency
-
-### SP3-06 — Array Data Management
-1. Insert new array elements using `$push`
-2. Add medical history records
-3. Insert pet comments
-4. Validate array structures
-
-### SP3-07 — Query Testing & Optimization
-1. Execute query validation tests
-2. Detect query execution errors
-3. Optimize query performance
-4. Verify database integrity
+### Week S17 — Final Integration
+- Integrate all backend modules
+- Prepare final release version `v3.0`
+- Create professional `README.md`
+- Record final project demonstration video
 
 ---
 
 # Weekly Execution Roadmap
 
-## Week 1: Basic Queries & Data Retrieval (Est. 8-10 Hours)
-
-- *Focus:* Implementing MongoDB basic read operations and validating data retrieval processes.
-
-- *Key Tasks:*
-  - Create `find()` queries for pet collections.
-  - Implement `findOne()` operations.
-  - Test query execution inside MongoDB Compass.
-  - Create projections for selected pet fields.
-  - Validate retrieved document structures.
-
-- *Friday Milestone:* Basic MongoDB queries working correctly and validated successfully.
-
----
-
-## Week 2: Advanced Filters & Logical Operations (Est. 8-10 Hours)
-
-- *Focus:* Applying advanced filtering and logical conditions to improve search functionality.
-
-- *Key Tasks:*
-  - Implement `$gt` and `$lt` filtering conditions.
-  - Create queries using `$in` and `$ne`.
-  - Develop logical queries using `$and`, `$or`, and `$not`.
-  - Test combined filtering conditions.
-  - Validate returned query results.
-
-- *Friday Milestone:* Advanced filtering and logical queries implemented successfully.
-
----
-
-## Week 3: Document Updates & Array Operations (Est. 6-8 Hours)
-
-- *Focus:* Managing document modifications and array-based operations within collections.
-
-- *Key Tasks:*
-  - Update pet information using `$set`.
-  - Increment values using `$inc`.
-  - Add medical records with `$push`.
-  - Validate document updates.
-  - Verify array consistency after modifications.
-
-- *Friday Milestone:* Document update and array operations functioning correctly.
-
----
-
-## Week 4: Query Validation & Optimization (Est. 6-8 Hours)
-
-- *Focus:* Testing query performance and validating database consistency.
-
-- *Key Tasks:*
-  - Execute complete query testing sessions.
-  - Identify and correct query errors.
-  - Optimize MongoDB query performance.
-  - Validate collection consistency.
-  - Organize repository documentation and scripts.
-
-- *Friday Milestone:* MongoDB query system validated and optimized successfully.
+| Week | Activities | Expected Outcome |
+|---|---|---|
+| S14 | Aggregation fundamentals and analytics reports | Functional statistical pipelines |
+| S15 | Advanced data transformation and reporting | Complete formatted reports |
+| S16 | Performance optimization and indexing | Faster and optimized queries |
+| S17 | Final integration and presentation | Fully functional final release |
 
 ---
 
 ## Expected Deliverables
 
-- Functional MongoDB query scripts
-- Advanced filtering operations
-- Logical query implementations
-- Updated pet documents
-- Array management scripts
-- Query validation documentation
-- Optimized MongoDB operations
+- MongoDB aggregation pipelines
+- Statistical analytics reports
+- Advanced reporting system
+- Optimized indexed database
+- Performance audit documentation
+- Final integrated application
+- Professional README.md
+- Final Release v3.0
+- Video project demonstration
 
 ---
 
 ## Impediments & Dependencies
 
-- *Dependency:* MongoDB Atlas connection must remain active before executing query and update operations.
+### Impediments
+- Complex aggregation pipeline debugging
+- Query optimization difficulties
+- Integration conflicts between modules
+- Limited testing data for performance analysis
 
-- *Dependency:* Existing collections and seed data are required for validating filters and query conditions.
-
-- *Dependency:* MongoDB Compass environment must be configured correctly before testing queries.
-
-- *Impediment:* Incorrect MongoDB query syntax could generate execution errors.
-
-- *Impediment:* Poor query optimization may affect database response time during testing.
+### Dependencies
+- MongoDB Compass installed and configured
+- Existing pet management database structure
+- Previous CRUD operations completed
+- GitHub repository access
+- Node.js backend environment configured
 
 ---
 
 ## Definition of Done
 
-* [x] All MongoDB queries execute correctly
-* [x] Advanced filters validated successfully
-* [x] Logical query operations implemented
-* [x] Pet documents updated without errors
-* [x] Array operations function properly
-* [x] Query testing completed successfully
-* [x] Repository documentation updated
-* [x] Database consistency verified
+* [x] Aggregation pipelines implemented successfully  
+* [x] Advanced reports generated correctly  
+* [x] MongoDB indexes configured properly  
+* [x] Query performance improved and documented  
+* [x] Final integration completed without errors  
+* [x] README.md professionally documented  
+* [x] Final release uploaded to GitHub  
