@@ -4,7 +4,9 @@
 
 ## Sprint Goal
 
-> Develop and implement advanced MongoDB query operations for the pet management system, allowing efficient data retrieval, filtering, logical searching, and dynamic document updates while maintaining database consistency and document integrity throughout the system.
+> Sprint Goal
+
+Implement and validate MongoDB query and document management operations for the pet management system, enabling efficient data retrieval, advanced filtering, logical searches, document updates, and array manipulation while maintaining database integrity, optimized performance, and consistent data management across all collections.
 
 ---
 
