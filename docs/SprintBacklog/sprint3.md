@@ -29,15 +29,16 @@
 
 | ID | User Story | Description | Priority | Estimation |
 |----|-----------|-------------|----------|------------|
-| SP3-01 | Aggregation Pipeline Introduction | Implement MongoDB aggregation pipelines using `$match`, `$group`, and `$count` for statistical analysis of pet records | High | 15 hrs |
-| SP3-02 | Basic Analytics Reports | Create analytical reports for totals, counts, and grouped species statistics | High | 10 hrs |
-| SP3-03 | Advanced Reporting Pipelines | Develop advanced aggregation pipelines using `$project`, `$sort`, `$limit`, and `$lookup` | High | 18 hrs |
-| SP3-04 | UI Data Transformation | Transform MongoDB data structures into frontend-friendly report formats | Medium | 12 hrs |
-| SP3-05 | MongoDB Index Optimization | Implement indexes with `createIndex()` to improve query performance | High | 15 hrs |
-| SP3-06 | Query Performance Audit | Analyze and compare query execution before and after indexing using `.explain("executionStats")` | High | 10 hrs |
-| SP3-07 | Final System Integration | Integrate aggregation, reporting, optimization, and CRUD modules into the final application | High | 12 hrs |
-| SP3-08 | Final Release Preparation | Prepare final repository structure, documentation, README, and deployment files | Medium | 8 hrs |
+| SP3-01 | Aggregation Pipeline Introduction | Implement MongoDB aggregation pipelines using `$match`, `$group`, and `$count` for statistical analysis of pet records | High | 3 |
+| SP3-02 | Basic Analytics Reports | Create analytical reports for totals, counts, and grouped species statistics | High | 4 |
+| SP3-03 | Advanced Reporting Pipelines | Develop advanced aggregation pipelines using `$project`, `$sort`, `$limit`, and `$lookup` | High | 3 |
+| SP3-04 | UI Data Transformation | Transform MongoDB data structures into frontend-friendly report formats | Medium | 4 |
+| SP3-05 | MongoDB Index Optimization | Implement indexes with `createIndex()` to improve query performance | High | 3 |
+| SP3-06 | Query Performance Audit | Analyze and compare query execution before and after indexing using `.explain("executionStats")` | High | 3 |
+| SP3-07 | Final System Integration | Integrate aggregation, reporting, optimization, and CRUD modules into the final application | High | 4 |
+| SP3-08 | Final Release Preparation | Prepare final repository structure, documentation, README, and deployment files | Medium | 4 |
 
+**total** 28 points
 ---
 
 ## Sprint Acceptance Criteria
