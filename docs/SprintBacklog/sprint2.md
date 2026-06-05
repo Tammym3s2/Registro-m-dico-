@@ -19,9 +19,9 @@
 
 * Sprint Duration: 4 weeks  
 * Daily Commitment: 2 hours (Monday-Friday)  
-* Total Sprint Capacity: 250 hours  
-* Estimated Workload: 110 hours  
-* Buffer: 90 hours  
+* Total Sprint Capacity: 200 hours  
+* Estimated Workload: 100 hours  
+* Buffer: 100 hours  
 
 ---
 
