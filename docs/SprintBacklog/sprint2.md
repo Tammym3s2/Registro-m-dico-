@@ -1,19 +1,27 @@
-# Sprint 2 — "Advanced Querying & Data Management"
-
----
-
-## Duration
-2 weeks
-
-## Goal
-
-Improve the pet management system by implementing advanced MongoDB queries, logical operators, document updates, and data mutation processes to manage heterogeneous pet information efficiently.
+# Sprint Backlog — Pet Management System
 
 ---
 
 ## Sprint Goal
 
-> Allow administrators and users to perform advanced searches, logical filtering, and dynamic updates on pet records while maintaining flexible NoSQL structures.
+> Develop and validate MongoDB query operations for the pet management system, allowing users to retrieve, filter, update, and manage pet information efficiently through advanced NoSQL queries and document modification techniques.
+
+---
+
+# Sprint 2 — "MongoDB Queries & Document Operations"
+
+**Duration:** 4 weeks  
+**Objective:** Implement MongoDB query operations, apply advanced filters, and manage document updates within the pet management database.
+
+---
+
+## Sprint Parameters & Capacity Plan
+
+* Sprint Duration: 4 weeks  
+* Daily Commitment: 2 hours (Monday-Friday)  
+* Total Sprint Capacity: 250 hours  
+* Estimated Workload: 110 hours  
+* Buffer: 90 hours  
 
 ---
 
@@ -35,98 +43,155 @@ Improve the pet management system by implementing advanced MongoDB queries, logi
 
 ## Sprint Acceptance Criteria
 
-- Users can retrieve pet information using `find()` and `findOne()`
-- Queries correctly filter documents using comparison operators
-- Logical operators return accurate results
-- Pet documents can be updated without rewriting the full document
-- Array fields support dynamic insertion using `$push`
-- All queries execute successfully without syntax errors
-
----
-
-## Definition of Done
-
-- Queries tested in MongoDB Compass and Mongo Shell
-- Scripts uploaded to GitHub repository
-- No syntax or execution errors
-- Query documentation completed
-- Release v2.0 tag created
-- Functional query scripts included in `/queries` and `/scripts`
+| Sprint Backlog ID | Acceptance Criteria | Validation Method |
+|---|---|---|
+| SP2-01 | `find()` and `findOne()` queries retrieve correct pet records from collections. | Execute queries and verify returned documents in MongoDB Compass. |
+| SP2-02 | Projection queries display only the requested fields without affecting document integrity. | Compare query outputs with original documents. |
+| SP2-03 | Advanced filters using `$gt`, `$lt`, `$in`, and `$ne` return accurate filtered results. | Test filters with different pet attributes and validate outputs. |
+| SP2-04 | Logical queries using `$and`, `$or`, and `$not` perform complex searches correctly. | Execute combined conditions and verify query accuracy. |
+| SP2-05 | Pet documents update correctly using `$set` and `$inc` operators. | Modify sample documents and confirm changes in database collections. |
+| SP2-06 | New elements are successfully inserted into arrays using `$push`. | Validate array updates in medical records or comments collections. |
+| SP2-07 | All queries execute without errors and return expected results efficiently. | Run query testing sessions and validate performance. |
 
 ---
 
 ## Technical Tasks
 
 ### SP2-01 — Basic Read Queries
-1. Create `queries/01_simple_find.mongodb`
-2. Implement `find()` examples
-3. Implement `findOne()` examples
-4. Test queries with pet collections
+1. Create `find()` queries for pet collections
+2. Implement `findOne()` searches
+3. Validate returned documents
 
 ### SP2-02 — Projection Queries
-1. Create projection queries for specific fields
-2. Hide unnecessary fields using projections
-3. Optimize returned data
+1. Select specific fields from pet documents
+2. Exclude unnecessary attributes
+3. Validate projection outputs
 
 ### SP2-03 — Advanced Filters
-1. Create `queries/02_filters.mongodb`
-2. Use `$gt` for greater-than conditions
-3. Use `$lt` for less-than conditions
-4. Use `$in` for list filtering
-5. Use `$ne` for exclusion filtering
+1. Apply `$gt` and `$lt` conditions
+2. Implement `$in` operator queries
+3. Use `$ne` for exclusion filters
+4. Validate filtered results
 
 ### SP2-04 — Logical Queries
-1. Create `queries/03_logic.mongodb`
-2. Implement `$and` conditions
-3. Implement `$or` conditions
-4. Implement `$not` conditions
-5. Test business logic queries
+1. Implement `$and` conditions
+2. Create `$or` search combinations
+3. Use `$not` operator in filters
+4. Test complex query structures
 
 ### SP2-05 — Update Pet Information
-1. Create `scripts/update_data.js`
-2. Use `$set` to modify pet attributes
-3. Use `$inc` to update counters or quantities
-4. Validate updated documents
+1. Update fields using `$set`
+2. Increment numeric values with `$inc`
+3. Validate document modifications
 
 ### SP2-06 — Array Data Management
-1. Create arrays for medical history or comments
-2. Use `$push` to insert new elements
-3. Verify array updates without replacing documents
+1. Insert new array elements using `$push`
+2. Add medical history records
+3. Validate array integrity
 
 ### SP2-07 — Query Testing & Optimization
-1. Validate all queries in MongoDB Compass
-2. Analyze query performance
-3. Fix syntax or logic issues
-4. Prepare RELEASE v2.0 documentation
+1. Execute query validation tests
+2. Identify query errors
+3. Optimize query performance
+4. Verify database consistency
 
 ---
 
-## Technologies Used
+# Weekly Execution Roadmap
 
-- MongoDB
-- MongoDB Compass
-- MongoDB Atlas
-- Mongo Shell
-- JavaScript
-- Git & GitHub
-- JSON/BSON
+## Week 1: Basic Queries & Data Retrieval (Est. 8-10 Hours)
+
+- *Focus:* Implementing basic MongoDB read operations and validating retrieved pet data.
+
+- *Key Tasks:*
+  - Create `find()` queries for pet collections.
+  - Implement `findOne()` searches.
+  - Test query outputs in MongoDB Compass.
+  - Create projections for specific pet fields.
+  - Validate returned documents and field visibility.
+
+- *Friday Milestone:* Basic read queries functioning correctly with validated outputs.
+
+---
+
+## Week 2: Advanced Filtering & Logical Queries (Est. 8-10 Hours)
+
+- *Focus:* Applying advanced MongoDB filters and logical conditions for complex searches.
+
+- *Key Tasks:*
+  - Implement `$gt` and `$lt` filters.
+  - Create queries using `$in` and `$ne`.
+  - Develop logical conditions with `$and`, `$or`, and `$not`.
+  - Test combined query structures with different pet attributes.
+  - Validate accuracy of filtered results.
+
+- *Friday Milestone:* Advanced filtering and logical query operations working successfully.
+
+---
+
+## Week 3: Document Updates & Array Management (Est. 6-8 Hours)
+
+- *Focus:* Managing document modifications and array operations within MongoDB collections.
+
+- *Key Tasks:*
+  - Update pet documents using `$set`.
+  - Increment numeric values using `$inc`.
+  - Add new medical records with `$push`.
+  - Validate updated documents and array structures.
+  - Test database consistency after updates.
+
+- *Friday Milestone:* Document updates and array operations validated successfully.
+
+---
+
+## Week 4: Testing, Optimization & Validation (Est. 6-8 Hours)
+
+- *Focus:* Final testing, query optimization, and sprint validation.
+
+- *Key Tasks:*
+  - Execute complete query testing sessions.
+  - Identify and fix query execution errors.
+  - Optimize MongoDB query performance.
+  - Validate database integrity and consistency.
+  - Organize repository documentation and scripts.
+
+- *Friday Milestone:* MongoDB queries optimized and sprint deliverables completed.
 
 ---
 
 ## Expected Deliverables
 
 - Functional MongoDB query scripts
-- Advanced filtering system
-- Logical query implementation
-- Update and mutation scripts
-- Documented query collection
-- RELEASE v2.0 ready for presentation
+- Advanced filtering operations
+- Logical query implementations
+- Updated pet documents
+- Array management operations
+- Query testing documentation
+- Optimized database queries
 
 ---
 
-## Sprint Summary
+## Impediments & Dependencies
 
-| Sprint | Goal | Stories | Points | Duration |
-|--------|------|---------|--------|----------|
-| Sprint 1 | Project Setup & NoSQL Foundations | 9 | 20 pts | 2 weeks |
-| Sprint 2 | Advanced Querying & Data Management | 7 | 21 pts | 2 weeks |
+- *Dependency:* MongoDB Atlas connection must remain active before executing query and update operations.
+
+- *Dependency:* Existing pet collections and seed data are required for testing filters and logical queries.
+
+- *Dependency:* MongoDB Compass environment must be configured before validating query outputs.
+
+- *Impediment:* Incorrect query syntax may generate execution or filtering errors.
+
+- *Impediment:* Poorly optimized queries could affect database response time during testing.
+
+---
+
+## Definition of Done
+
+* [x] All MongoDB queries execute correctly
+* [x] Advanced filters validated successfully
+* [x] Logical queries return accurate results
+* [x] Pet documents updated without errors
+* [x] Array operations function properly
+* [x] Query testing completed successfully
+* [x] Repository documentation updated
+* [x] Database consistency verified
