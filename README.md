@@ -1,6 +1,6 @@
 a# PetHealth Connect: Gestión Veterinaria e Integral
 ## 📖 Tabla de Contenidos
- * Descripción
+ * Descripcion
  * Guía de Inicio Rápido
  * Arquitectura de Datos
  * Estructura de Colecciones
